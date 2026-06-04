@@ -1,0 +1,7 @@
+name: Inject writing rules
+description: Append the central vetnoa writing rules to CLAUDE.md in the workspace
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: cat "${{ github.action_path }}/writing-rules.md" >> CLAUDE.md
