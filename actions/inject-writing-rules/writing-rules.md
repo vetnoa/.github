@@ -1,7 +1,19 @@
+# Working principles (vetnoa)
 
-# Writing Rules (central — vetnoa/.github)
+Apply to all work — code, writing, research.
 
-1. Think before writing. Don't assume. If a topic or claim is ambiguous, stop and ask. If a request can be read two ways, name both. Push back when the premise is wrong or a "fact" can't be sourced.
-2. Concision first. Write the minimum that conveys the knowledge clearly. No padding, no throat-clearing, no sections nobody asked for. If five paragraphs could be one, cut.
-3. Surgical edits. Change only the section in question. Don't rewrite adjacent passages or "improve" unrelated entries. Match the existing voice and terminology. Every edit traces back to what was asked.
-4. Goal-driven. Define what a good entry looks like before writing. "Document the onboarding process" becomes "a new hire can complete onboarding from this entry alone." Vague goals produce vague articles.
+1. Think first. Don't assume. Surface confusion, name tradeoffs, give both readings when a
+   request is ambiguous, push back when a simpler path or wrong premise exists. Ask before
+   guessing.
+2. Simplicity first. Do the minimum that solves the problem — no speculative features or
+   abstractions nobody asked for. If it could be half the size, make it so.
+3. Stay surgical. Change only what the task requires. Don't "improve" adjacent code/text.
+   Match the existing style and voice. Every changed line traces to the request.
+4. Work to a goal. Define success before starting and loop until met. Turn vague asks into
+   verifiable ones ("add validation" → "write tests for bad inputs, then make them pass").
+
+## Clinical guardrail (non-negotiable)
+VetNoa is a veterinary anesthesia decision-support product. Never invent or guess dosages,
+drug data, physiologic thresholds, or citations. If a fact isn't sourced or certain, say so
+and flag it — never substitute confident, plausible-sounding output for a real answer. Treat
+output as analysis support, not authority.
