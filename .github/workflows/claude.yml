@@ -23,8 +23,7 @@ jobs:
           GH_TOKEN: ${{ secrets.LITERATURE_TOKEN }}
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          allowed_tools: "Bash(gh api *),WebFetch,Bash(curl *)"
           additional_permissions: |
             actions: read
           claude_args: |
-            --mcp-config '{"mcpServers":{"notionApi":{"command":"npx","args":["-y","@notionhq/notion-mcp-server"],"env":{"NOTION_TOKEN":"${{ secrets.NOTION_API_KEY }}"}}}}' --allowed-tools "mcp__notionApi"
+            --allowed-tools "Bash(gh api:*),WebFetch,Bash(curl:*),mcp__notionApi" --mcp-config '{"mcpServers":{"notionApi":{"command":"npx","args":["-y","@notionhq/notion-mcp-server"],"env":{"NOTION_TOKEN":"${{ secrets.NOTION_API_KEY }}"}}}}'
