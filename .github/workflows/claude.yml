@@ -37,5 +37,5 @@ jobs:
           additional_permissions: |
             actions: read
           claude_args: |
-            --model claude-fable-5
+            --model claude-opus-4.8
             --allowed-tools "Bash(gh api:*),WebFetch,Bash(curl:*),mcp__notionApi" --mcp-config '{"mcpServers":{"notionApi":{"command":"npx","args":["-y","@notionhq/notion-mcp-server"],"env":{"NOTION_TOKEN":"${{ secrets.NOTION_API_KEY }}"}}}}'
